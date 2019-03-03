@@ -1,0 +1,110 @@
+.price-offer {
+    height: 700px;
+    background-color: #F1F1F1;
+    display: flex;
+
+    .box-price {
+        min-width: 350px;
+        height: 600px;
+        border: 2px solid #C2C2C2;
+        background-color: white;
+        position: relative;
+        top: 50px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border: 2px solid #C2C2C2;
+            border-radius: 50%;
+            right: 170px;
+            top: -35px;
+            z-index: 1;
+            background-color: white;
+        }
+        
+        &::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            border: 2px solid #C2C2C2;
+            border-radius: 50%;
+            background-color: #C2C2C2;
+            right: 182.5px;
+            top: -23px;
+            z-index: 2;
+        }
+
+        &:hover {
+            border: 2px solid $project-green-color;
+            background-color: $project-green-color;
+
+            &::before {
+                background-color: $project-green-color;
+                border: 2px solid $project-green-color
+            }
+
+            &::after {
+                background-color: white;
+                border: 2px solid white;
+            }
+
+            h1 {
+                color: white;
+            }
+
+            .price-circle {
+                border: $project-green-color;
+            }
+
+            .offer-button {
+                background-color: white;
+                color: $project-green-color;
+            }
+        }
+
+        h1 {
+            color: $project-green-color;
+            text-align: center;
+            margin: 50px;
+        }
+
+        .price-circle {
+            width: 150px;
+            height: 150px;
+            border: 3px solid #C2C2C2;
+            border-radius: 50%;
+            background-color: white;
+            margin-bottom: 50px;
+
+            & > p, span {
+                text-align: center;
+                padding-top: 35%;
+            }
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            background-color: #e5e5e5;
+
+            li {
+                padding: 10px;
+            }
+
+            li:nth-child(even) {
+                background-color: #F1F1F1;
+            }
+
+        }
+
+        .offer-button {
+            position: absolute;
+            bottom: 10px;
+            left: 60px;
+        }
+    }
+}

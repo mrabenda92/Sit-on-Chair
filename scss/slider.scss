@@ -1,0 +1,130 @@
+.slider {
+    background: linear-gradient(
+        to bottom, 
+        #fff, 
+        #DBDBDB, 
+        #F2F2F2,
+        #ADA996);
+    // width: 100vw;
+    height: 500px;
+    position: relative;
+
+    @media #{$tablet} {
+        height: 350px;
+    }
+
+    @media #{$phone} {
+        height: 280px;
+    }
+
+    .slider-content {
+        display: flex;
+        position: relative;
+        top: 70px;
+
+        @media #{$tablet} {
+            top: 20px;
+            display: block;
+        }
+    }
+
+    .slider-arrows {
+        position: absolute;
+        color: $project-green-color;
+        font-size: 100px;
+        top: 35%;
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .left-arrow {
+        left: 10px;
+
+        &:hover {
+            transform: scale(1.2, 1.2)
+        }
+    }
+    
+    .right-arrow {
+        right: 10px;
+
+        &:hover {
+            transform: scale(1.2, 1.2)
+        }
+    }
+
+    .picture-part {
+        button {
+            display: none;
+
+            @media #{$tablet} {
+                display: block;
+            }
+        }
+    }
+    
+    .product-picture {
+        width: 470px;
+        height: 400px;
+
+        @media #{$tablet} {
+            width: 350px;
+            height: 230px;
+        }
+
+        @media #{$phone} {
+            width: 250px;
+            height: 180px;
+        }
+    }
+    
+    .prod-pict-one {
+        background: url(../images/chair1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+    }
+
+    .prod-pict-two, .prod-pict-three, .prod-pict-four {
+        display: none;
+    }
+    
+    .text-part {
+        position: relative;
+        right: 20px;
+        text-align: center;
+
+        &>h2 {
+            text-transform: uppercase;
+            
+            span {
+                color: $project-green-color
+            }
+        }
+
+        p {
+            padding: 40px;
+        }
+
+        @media #{$tablet} {
+            display: none;
+        }
+    }
+}
+
+
+button {
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    background-color: $project-green-color;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 10px 55px;
+    opacity: 0.7;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+

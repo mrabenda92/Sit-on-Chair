@@ -1,0 +1,20 @@
+$project-green-color: #24BA9F;
+$phone: "only screen and (max-width: 480px)";
+$tablet: "only screen and (max-width: 768px)";
+$desktop: "only screen and (mix-width: 769px)";
+
+* {
+    margin: 0 auto;
+    font-family: 'Raleway', 'Arial', sans-serif;
+}
+          
+// .offer-container {
+//     width: 1220px;
+// }
+
+@import "header";
+@import "slider";
+@import "promotions";
+@import "offers";
+
+
