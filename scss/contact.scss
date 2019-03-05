@@ -1,0 +1,63 @@
+.contact {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .contact-left {
+        width: 80%;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0;
+
+        .contact-form {
+            position: relative;
+            top: 10px;
+
+            h1 {
+                position: relative;
+                color: rgb(92, 91, 91);
+        
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 20%;
+                    height: 7px;
+                    background-color: $project-green-color;
+                    margin-top: 5px;
+                    margin-bottom: 15px;
+                }
+            }
+
+            label {
+                display: block;
+            }
+            
+            input, textarea {
+                border: 1px solid $project-green-color;
+                margin: 5px 0;
+                width: 450px;
+                color: #e5e5e5;
+            }
+
+            input {
+                height: 50px;
+            }
+
+            textarea {
+                resize: none;
+            }
+        }
+    }
+    
+    .contact-right {
+        width: 20%;
+
+        .contact-picture {
+            background: url(../images/chair3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: block;
+        }
+    }
+}

@@ -7,6 +7,18 @@ $desktop: "only screen and (mix-width: 769px)";
     margin: 0 auto;
     font-family: 'Raleway', 'Arial', sans-serif;
 }
+
+.white-background {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.gray-background {
+    background-color: #F1F1F1;
+    padding: 0;
+    margin: 0;
+}
           
 // .offer-container {
 //     width: 1220px;
@@ -16,5 +28,6 @@ $desktop: "only screen and (mix-width: 769px)";
 @import "slider";
 @import "promotions";
 @import "offers";
+@import "contact";
 
 
