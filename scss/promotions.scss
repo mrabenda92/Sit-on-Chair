@@ -3,16 +3,22 @@
     flex-wrap: wrap;
     height: 320px;
     position: relative;
-    margin-left: 35px;
-    margin-right: 35px;
+    padding-left: 10%;
+    padding-right: 10%;
 
     .box-offer {
         flex-basis: 10%;
         flex-grow: 1;
         border: 10px solid #fff;
         margin-top: 10px;
-        min-width: 200px;
-        max-width: 400px;
+        height: 50px;
+        width: 80%;
+        // min-width: 200px;
+        // max-width: 400px;
+    }
+
+    @media #{only screen and (max-width: 1399px)} {
+        width: 80%;
     }
 
 
@@ -22,7 +28,7 @@
         background-repeat: no-repeat;
         height: 220px;
         opacity: 0.7;
-        margin-left: 150px;
+
 
         h4 {
             display: none;
@@ -34,15 +40,16 @@
             .banner {
                 display: block;
                 h4 {
-                display: inline-block;
-            }} 
-        }
+                    display: inline-block;
+                }} 
+            }
 }
 
     .second-offer {
         background: url(../images/box2_img.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        position: right;
         height: 220px;
         opacity: 0.7;
         
@@ -55,8 +62,9 @@
             .banner {
                 display: block;
                 h4 {
-                display: inline-block;
-            }} 
+                    display: inline-block;
+                }
+            }
         }
     }
 
@@ -75,26 +83,35 @@
             background-color: $project-green-color;
             width: 40%;
             height: 5px;
-            margin-left: 15px;
         }
     }
 
     .offer-description {
-        background-color: white;
-        height: 245px;
-        margin-right: 150px;
-        border: 3px solid #DADADA;
-        margin-top: 20px;
+        display: none;
+
+        @media #{only screen and (min-width: 1401px)} {
+            background-color: white;
+            height: 245px;
+            margin-right: 150px;
+            border: 3px solid #DADADA;
+            margin-top: 20px;
+            display: block;
+        }
 
         h4 {
-            margin-top: 60px;
-            &::after {
-            content: '';
-            display: block;
-            background-color: $project-green-color;
-            width: 35%;
-            height: 5px;
+
+            @media #{only screen and (min-width: 1401px)} {
+                margin-top: 60px;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    background-color: $project-green-color;
+                    width: 35%;
+                    height: 5px;
+                }
             }
+
         }
     }
 

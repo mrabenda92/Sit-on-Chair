@@ -1,13 +1,12 @@
 .contact {
-    width: 100%;
     height: 800px;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
 
     .contact-left {
-        width: 80%;
-        margin-left: 10px;
-        margin-right: 10px;
+        // width: 60%;
         padding: 0;
 
         .contact-form {
@@ -36,28 +35,29 @@
             input, textarea {
                 border: 1px solid $project-green-color;
                 margin: 5px 0;
-                width: 450px;
                 color: #e5e5e5;
             }
 
             input {
                 height: 50px;
+                width: 650px;
             }
 
             textarea {
                 resize: none;
+                width: 646px;
             }
         }
     }
     
     .contact-right {
-        width: 20%;
+        // width: 40%;
 
         .contact-picture {
+            width: 250px;
+            height: 250px;
             background: url(../images/chair3.png);
             background-repeat: no-repeat;
-            background-size: cover;
-            display: block;
         }
     }
 }

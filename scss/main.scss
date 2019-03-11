@@ -1,7 +1,7 @@
 $project-green-color: #24BA9F;
 $phone: "only screen and (max-width: 480px)";
 $tablet: "only screen and (max-width: 768px)";
-$desktop: "only screen and (mix-width: 769px)";
+$desktop: "only screen and (min-width: 769px)";
 
 * {
     margin: 0 auto;
@@ -19,10 +19,17 @@ $desktop: "only screen and (mix-width: 769px)";
     padding: 0;
     margin: 0;
 }
-          
-// .offer-container {
-//     width: 1220px;
-// }
+
+.top-background {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(
+        to bottom, 
+        #fff, 
+        #DBDBDB, 
+        #F2F2F2,
+        #ADA996);
+}
 
 @import "header";
 @import "slider";

@@ -1,13 +1,9 @@
 .slider {
-    background: linear-gradient(
-        to bottom, 
-        #fff, 
-        #DBDBDB, 
-        #F2F2F2,
-        #ADA996);
-    // width: 100vw;
+    box-sizing: border-box;
     height: 500px;
     position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
 
     @media #{$tablet} {
         height: 350px;
@@ -94,6 +90,15 @@
         right: 20px;
         text-align: center;
 
+        
+        @media #{only screen and (max-width: 940px)} {
+            top: 100px;
+        }
+
+        @media #{$tablet} {
+            display: none;
+        }
+
         &>h2 {
             text-transform: uppercase;
             
@@ -104,10 +109,10 @@
 
         p {
             padding: 40px;
-        }
 
-        @media #{$tablet} {
-            display: none;
+            @media #{only screen and (max-width: 940px)} {
+                display: none;
+            }
         }
     }
 }
