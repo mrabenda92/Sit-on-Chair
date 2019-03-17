@@ -10,12 +10,12 @@
 
     h3 {
         position: relative;
-        top: -120px;
+        top: 20px;
 
         &::after {
             content: '';
             display: block;
-            width: 100%;
+            width: 360%;
             height: 7px;
             background-color: $project-green-color;
             margin-top: 5px;
@@ -140,12 +140,12 @@
 
         h3 {
             position: relative;
-            top: -120px;
+            top: 20px;
     
             &::after {
                 content: '';
                 display: block;
-                width: 40%;
+                width: 360%;
                 height: 7px;
                 background-color: $project-green-color;
                 margin-top: 5px;
@@ -207,6 +207,10 @@
     
                 .price-circle {
                     border: $project-green-color;
+
+                    & > p, span {
+                        color: white;
+                    }
                 }
     
                 .offer-button {
@@ -224,11 +228,14 @@
             }
     
             .price-circle {
-                position: absolute;
+                position: relative;
                 left: 40px;
+                top: 55px;
     
                 & > p, span {
-                    text-align: center;
+                    font-weight: bold;
+                    color: $project-green-color;
+                    // text-align: center;
                 }
             }
     
@@ -251,8 +258,10 @@
     
             .offer-button {
                 position: absolute;
-                bottom: 25px;
-                right: 30px;
+                width: 170px;
+                padding: 0;
+                bottom: 35px;
+                right: 20px;
         }}
     }
 

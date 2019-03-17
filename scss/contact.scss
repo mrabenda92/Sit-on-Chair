@@ -58,6 +58,14 @@
             height: 250px;
             background: url(../images/chair3.png);
             background-repeat: no-repeat;
+            position: relative;
+            left: -10px;
+        }
+
+        button {
+            position: relative;
+            left: 80px;
+            text-align: center;
         }
     }
 }
