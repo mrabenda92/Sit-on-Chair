@@ -10,7 +10,7 @@
     }
 
     @media #{$phone} {
-        height: 280px;
+        height: 300px;
     }
 
     .slider-content {
@@ -18,9 +18,18 @@
         position: relative;
         top: 70px;
 
+        @media #{only screen and (min-width: 769px)} {
+            left: -50px;
+        }
+
+        // @media #{only screen and (min-width: 941px)} {
+        //     left: 0;
+        // }
+
         @media #{$tablet} {
             top: 20px;
             display: block;
+            left: 0;
         }
     }
 
@@ -60,7 +69,7 @@
     }
     
     .product-picture {
-        width: 470px;
+        width: 460px;
         height: 400px;
 
         @media #{$tablet} {
@@ -78,12 +87,20 @@
         background: url(../images/chair1.png);
         background-repeat: no-repeat;
         background-size: cover;
-        display: block;
     }
 
-    .prod-pict-two, .prod-pict-three, .prod-pict-four {
-        display: none;
+    .prod-pict-two {
+        background: url(../images/chair2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+
+    .prod-pict-three {
+        background: url(../images/chair4.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     
     .text-part {
         position: relative;

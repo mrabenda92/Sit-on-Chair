@@ -1,5 +1,5 @@
 .contact {
-    height: 800px;
+    height: 410px;
     display: flex;
     flex-wrap: wrap;
     padding-left: 10%;
@@ -36,16 +36,34 @@
                 border: 1px solid $project-green-color;
                 margin: 5px 0;
                 color: #e5e5e5;
+                color: black;
+                padding-left: 5px;
             }
 
             input {
                 height: 50px;
-                width: 650px;
+                width: 250px;
+
+                @media #{only screen and (min-width: 701px)} {
+                    width: 350px;
+                }
+
+                @media #{only screen and (min-width: 1400px)} {
+                    width: 650px;
+                }
             }
 
             textarea {
                 resize: none;
-                width: 646px;
+                width: 246px;
+
+                @media #{only screen and (min-width: 701px)} {
+                    width: 346px;
+                }
+
+                @media #{only screen and (min-width: 1400px)} {
+                    width: 646px;
+                }
             }
         }
     }
@@ -62,10 +80,31 @@
             left: -10px;
         }
 
-        button {
+        .contact-agreement {
             position: relative;
-            left: 80px;
-            text-align: center;
+            width: 320px;
+            display: flex;
+            margin-bottom: 10px;
         }
+
+        .agreement {
+            border: 1px solid $project-green-color;
+            height: 100%;
+
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+
+    @media #{only screen and (max-width: 700px)} {
+        input {
+            width: 350px;
+        }
+
+        textarea {
+            width: 346px;
+        }   
     }
 }
