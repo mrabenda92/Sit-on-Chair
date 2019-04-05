@@ -1,5 +1,21 @@
 //menu 
+$(".toProd").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $(".promotion-offer").offset().top
+    }, 1000);
+});
 
+$(".toPrices").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $(".price-offer").offset().top
+    }, 1000);
+});
+
+$(".toContact").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $(".contact").offset().top
+    }, 1000);
+});
 
 //slider
 
