@@ -76,3 +76,13 @@ agreement.addEventListener("click", function(){
         agreement.src = "images/form_zero.jpg";
         trackAgreement = "no"
 }})
+
+//buttons
+
+const buttons = document.querySelectorAll("button")
+
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function() {
+        alert("Będzie dodane już wkrótce!")
+    })
+}
