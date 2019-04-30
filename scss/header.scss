@@ -6,6 +6,11 @@
     color: white;
     padding: 10px;
     text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
 
     .menu {
         @media #{$phone} {
@@ -36,4 +41,9 @@
         display: block;
     }
 }
+
+// body .fixed-nav menu {
+//     position: fixed;
+//     box-shadow:0 5px 0 rgba(0,0,0,0.1);
+//   }
 

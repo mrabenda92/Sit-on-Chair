@@ -1,13 +1,13 @@
 //menu 
 $(".toProd").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $(".promotion-offer").offset().top
+        scrollTop: $(".promotion-offer").offset().top + (-40)
     }, 1000);
 });
 
 $(".toPrices").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $(".price-offer").offset().top
+        scrollTop: $(".price-offer").offset().top + (-40)
     }, 1000);
 });
 
@@ -16,6 +16,22 @@ $(".toContact").click(function() {
         scrollTop: $(".contact").offset().top
     }, 1000);
 });
+
+
+// const nav = document.querySelector(".nav")
+// let topOfNav = nav.offsetTop;
+
+// function fixNav() {
+//     if(window.scrollY >=topOfNav) {
+//         document.body.style.paddingTop = nav.offsetHeight + 'px';
+//         document.body.classList.add('fixed-nav');
+//     } else {
+//         document.body.classList.remove('fixed-nav');
+//         // document.body.style.paddingTop = 0;
+//     }
+// }
+
+// window.addEventListener('scroll', fixNav);
 
 //slider
 
